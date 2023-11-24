@@ -26,7 +26,7 @@ const Notes = () => {
                 <Grid container>
                     {
                         notes.map(note => (
-                            <Grid item style={{marginTop: 15}}>
+                            <Grid key={note.id} item style={{marginTop: 15}}>
                             <Note note={note} />
                             </Grid>
                         ))

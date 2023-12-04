@@ -37,7 +37,7 @@ const Form=()=>{
     const[showTextFeild,setShowTextFeild]=useState(false);
     const[addNote,setAddNote]=useState({...note,id:uuid()});
 
-    const {notes,setNotes}=useContext(DataContext);
+    const {setNotes}=useContext(DataContext);
 
     const contianerRef=useRef();
 

@@ -85,6 +85,7 @@ const Note = ({ note }) => {
         notes[index].heading=editNote.eheading;
         notes[index].text=editNote.etext;
         console.log(notes);
+        handleClose();
     };
 
     return (
@@ -136,7 +137,7 @@ const Note = ({ note }) => {
                             />
                         </CardContent>
                         <CardActions>
-                            <Button variant="text" onClick={()=>handleClose} style={{ marginLeft: 'auto', color: 'rgba(0, 0, 0, 0.54)' }}>Close</Button>
+                            <Button variant="text" onClick={()=>handleClose()} style={{ marginLeft: 'auto', color: 'rgba(0, 0, 0, 0.54)' }}>Close</Button>
                             <Button variant="text" onClick={()=>saveNote(note)} style={{ color: 'rgba(0, 0, 0, 0.54)' }}>Save</Button>
                         </CardActions>
                     </Card>

@@ -12,7 +12,7 @@ const Header = styled(AppBar)`
 
 const Heading=styled(Typography)`
   color:#5F6368;
-  font-family: 'Itim', cursive;
+  font-family: 'Comic Neue', cursive;
   font-weight: 200;
   font-size: 24px;
   margin-left: 20px;

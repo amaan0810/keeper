@@ -10,6 +10,9 @@ import {v4 as uuid} from "uuid"
 import React from "react";
 
 
+
+
+
 const Contianer=styled(Box)`
     display: flex;
     flex-direction: column;
@@ -49,13 +52,9 @@ const Form=()=>{
 
         if(addNote.heading || addNote.text)
         setNotes(prevArr=>[addNote,...prevArr]);
-
-        console.log(notes)
     }
 
     const onTextChange=(e)=>{
-        console.log(e.target.name,e.target.value);
-
         let changedNote={...addNote,[e.target.name]:e.target.value};
         setAddNote(changedNote);
 
